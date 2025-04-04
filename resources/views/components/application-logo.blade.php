@@ -1,0 +1,1 @@
+<a href="{{ route('home') }}"><img src="assets/images/logo-dashboard.png" alt="" title=""></a>
