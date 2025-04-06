@@ -35,11 +35,11 @@
                 </a>
             </li>
             <li>
-                <a href="mailto:info@capitalshiftcreditunion.com">
+                <a href="mailto:info@kinetixfinance.com">
                     <span class="iconlist_icon">
                         <img src="assets/images/icons/icon_mail.svg" alt="Icon Email">
                     </span>
-                    <span class="iconlist_text">info@capitalshiftcreditunion.com</span>
+                    <span class="iconlist_text">info@kinetixfinance.com</span>
                 </a>
             </li>
         </ul>
@@ -685,7 +685,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "CapitalShift Credit Union exceeded my expectations. Their tailored plan
+                                    "Kinetix Finance exceeded my expectations. Their tailored plan
                                     aligned perfectly with my goals. Highly recommended!"
                                 </p>
                                 <div class="authorbox_block">
@@ -706,7 +706,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Exceptional service from CapitalShift Credit Union. Their team's expert advice and personalized
+                                    "Exceptional service from Kinetix Finance. Their team's expert advice and personalized
                                     helped me achieve my financial goals quickly."
                                 </p>
                                 <div class="authorbox_block">
@@ -727,7 +727,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Selecting CapitalShift Credit Union was among my best decisions. Their clear advice, their
+                                    "Selecting Kinetix Finance was among my best decisions. Their clear advice, their
                                     support empowered me to make informed financial decisions."
                                 </p>
                                 <div class="authorbox_block">
@@ -748,7 +748,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "CapitalShift Credit Union exceeded my expectations. Their tailored plan
+                                    "Kinetix Finance exceeded my expectations. Their tailored plan
                                     aligned perfectly with my goals. Highly recommended!"
                                 </p>
                                 <div class="authorbox_block">
@@ -769,7 +769,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Exceptional service from CapitalShift Credit Union. Their team's expert advice and personalized
+                                    "Exceptional service from Kinetix Finance. Their team's expert advice and personalized
                                     helped me achieve my financial goals quickly."
                                 </p>
                                 <div class="authorbox_block">
@@ -790,7 +790,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Selecting CapitalShift Credit Union was among my best decisions. Their clear advice, their
+                                    "Selecting Kinetix Finance was among my best decisions. Their clear advice, their
                                     support empowered me to make informed financial plans."
                                 </p>
                                 <div class="authorbox_block">
