@@ -300,7 +300,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Corporate Finance Advisory
                                 </a>
                             </h3>
@@ -317,7 +317,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Business Financial Consulting
                                 </a>
                             </h3>
@@ -334,7 +334,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Education Funding Planning
                                 </a>
                             </h3>
@@ -351,7 +351,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Insurance Planning and Analysis
                                 </a>
                             </h3>
@@ -368,7 +368,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Investment Management Solutions
                                 </a>
                             </h3>
@@ -385,7 +385,7 @@
                         </div>
                         <div class="service_content">
                             <h3 class="service_title">
-                                <a href="service_details.html">
+                                <a href="#">
                                     Retirement Planning Services
                                 </a>
                             </h3>
