@@ -62,7 +62,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 col-sm-4 col-6 d-flex align-items-center">
                             <div class="site_logo">
-                                <a class="site_link" href="index.html">
+                                <a class="site_link" href="{{ route('home') }}">
                                     <img src="assets/images/site_logo/site_logo_black_3.svg" alt="Site Logo Black">
                                 </a>
                             </div>
