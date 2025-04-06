@@ -44,7 +44,7 @@ class AuthenticatedSessionController extends Controller
         // $result = $response->json();
 
         // if ($response->successful() && $result['success'] == true) {
-        // try {
+        try {
             $request->authenticate();
 
             $request->session()->regenerate();
@@ -54,9 +54,9 @@ class AuthenticatedSessionController extends Controller
             }
 
             return redirect()->intended(RouteServiceProvider::HOME);
-        // } catch (\Exception $e) {
-        //     return back()->with('message', $e->getMessage());
-        // }
+        } catch (\Exception $e) {
+            return back()->with('message', $e->getMessage());
+        }
         // } else {
         //     $request->session()->flash('message', "Please confirm you are not a robot");
         //     return redirect()->back();
