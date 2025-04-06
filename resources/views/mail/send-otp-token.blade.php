@@ -210,7 +210,7 @@ body, table, td, p, a, li, blockquote {
 								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
 								<tr>
 									<td align="left">
-										<img src="{{ asset('assets/images/site_logo/site_logo_black_3.svg') }}" alt="Logo" class="GlobalStockpile-Logo" width="120">
+										<img src="https://kinetixfinance.com/assets/images/site_logo/site_logo_black_3.svg" alt="Logo" class="KinetixFinance-Logo" width="120">
 									</td>
 								</tr>
 								</table>
@@ -284,7 +284,7 @@ body, table, td, p, a, li, blockquote {
 		<tbody>
 		<tr>
         <td align="center" style="color:#ffffff;padding:20px 40px 0 40px;font-family: 'Lato', Arial, Helvetica, sans-serif;font-weight:normal;font-size:12px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-                © 2025 GlobalStockpile Banking. All rights reserved.
+                © 2025 Kinetix Finance. All rights reserved.
 			</td>
 		</tr>
 		</tbody>
