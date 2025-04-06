@@ -11,7 +11,7 @@
     <meta name="keywords" content="Finance & Consulting Bootstrap Site Template">
     <meta name="author" content="XpressBuddy">
 
-    <title>Financial Consulting – Kinetix Finance – Finance & Consulting Site Template.</title>
+    <title>Kinetix Finance – Get Access To Top of the Line Banking Services.</title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
