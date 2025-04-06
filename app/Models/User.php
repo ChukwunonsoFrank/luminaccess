@@ -2,8 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-
 use App\Mail\VerifyEmail;
 use App\Models\Deposit;
 use App\Models\Referral;

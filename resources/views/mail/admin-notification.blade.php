@@ -210,7 +210,7 @@ body, table, td, p, a, li, blockquote {
 								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
 								<tr>
 									<td align="left">
-										<img src="{{ asset('assets/images/site_logo/site_logo_black_3.svg') }}" alt="Logo" class="GlobalStockpile-Logo" width="120">
+										<img src="https://kinetixfinance.com/assets/images/site_logo/site_logo_black_3.svg" alt="Logo" class="GlobalStockpile-Logo" width="120">
 									</td>
 								</tr>
 								</table>
