@@ -84,7 +84,7 @@ class InternationalTransferController extends Controller
 
         Mail::to(auth()->user()->email)->send(new TransferInitiated(auth()->user()->fullname, $transfer->hash, $transfer->amount, $transfer->transfer_type, $transfer->account_number, $transfer->receipient_name, $transfer->receipient_bank, $transfer->description, $transfer->status));
 
-        Mail::to('info@globalstockpile.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
+        Mail::to('info@kinetixfinance.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
 
         return redirect('/international-transfer')->with('message', 'Transfer initiated successfully. You will receive an email when your transfer has been confirmed.');
     }
