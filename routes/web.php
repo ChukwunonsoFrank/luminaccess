@@ -40,12 +40,19 @@ Route::get('/', [MarketingPagesController::class, 'home'])->name('home');
 Route::get('/about', [MarketingPagesController::class, 'about'])->name('about');
 Route::get('/services', [MarketingPagesController::class, 'services'])->name('services');
 Route::get('/contact', [MarketingPagesController::class, 'contact'])->name('contact');
+
 Route::get('/link-storage', function () {
     Artisan::call('storage:link');
     dd('Done');
 });
+
 Route::get('/clear-cache', function () {
     Artisan::call('optimize:clear');
+    dd('cleared app cache');
+});
+
+Route::get('/cache', function () {
+    Artisan::call('optimize');
     dd('optimized app cache');
 });
 
