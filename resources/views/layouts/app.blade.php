@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Kinetix Finance - The Best Way To Bank Internationally</title>
+        <title>Kinetix Capital - The Best Way To Bank Internationally</title>
 
         <script src="{{ asset('dash/js/jquery.min.js') }}"></script>
       <script src="{{ asset('dash/js/popper.min.js') }}"></script>

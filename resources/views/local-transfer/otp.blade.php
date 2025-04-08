@@ -35,6 +35,7 @@
                               <input name="account_number" value="{{ $account_number }}" required="" hidden="">
                               <input name="receipient_name" value="{{ $receipient_name }}" required="" hidden="">
                               <input name="receipient_bank" value="{{ $receipient_bank }}" required="" hidden="">
+                              <input name="description" value="{{ $description }}" required="" hidden="">
 
                               <p class="card-text mb-1 fw-medium">Token</p>
                               <div class="form-control-wrap mb-3">

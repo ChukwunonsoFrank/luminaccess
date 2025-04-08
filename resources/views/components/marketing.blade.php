@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="thumbnail" content="assets/images/Kinetix Finance_page_thumbnail.webp">
-    <meta name="description" content="Kinetix Finance – Finance & Consulting Site Template.">
+    <meta name="thumbnail" content="assets/images/Kinetix Capital_page_thumbnail.webp">
+    <meta name="description" content="Kinetix Capital – Finance & Consulting Site Template.">
     <meta name="keywords" content="Finance & Consulting Bootstrap Site Template">
     <meta name="author" content="XpressBuddy">
 
-    <title>Kinetix Finance – Get Access To Top of the Line Banking Services.</title>
+    <title>Kinetix Capital – Get Access To Top of the Line Banking Services.</title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -207,7 +207,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <p class="copyright_text mb-0">
-                                Copyright © 2025 Kinetix Finance. All rights reserved.
+                                Copyright © 2025 Kinetix Capital. All rights reserved.
                             </p>
                         </div>
                         <div class="col-lg-6">

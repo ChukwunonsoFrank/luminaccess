@@ -80,6 +80,16 @@
                                   />
                                 </div>
                               </div>
+                              <p class="card-text mb-1 fw-medium">Description</p>
+                              <div class="form-control-wrap mb-3">
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    name="description"
+                                    class="form-control" required
+                                  />
+                                </div>
+                              </div>
                               <button type="submit" class="btn btn-primary mt-4">
                                 Transfer
                               </button>

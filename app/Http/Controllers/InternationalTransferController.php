@@ -36,6 +36,7 @@ class InternationalTransferController extends Controller
         $receipient_name = $request->receipient_name;
         $receipient_bank = $request->receipient_bank;
         $swift_code = $request->swift_code;
+        $description = $request->description;
 
         $generated_otp_token = strval(rand(100000, 999999));
 
@@ -51,6 +52,7 @@ class InternationalTransferController extends Controller
             'receipient_name' => $receipient_name,
             'receipient_bank' => $receipient_bank,
             'swift_code' => $swift_code,
+            'description' => $description,
         ]);
     }
 
@@ -61,6 +63,7 @@ class InternationalTransferController extends Controller
         $receipient_bank = $request->receipient_bank;
         $swift_code = $request->swift_code;
         $otp_token = $request->otp_token;
+        $description = $request->description;
 
         $user_otp_token = User::where('id', auth()->user()->id)->value('otp_token');
 
@@ -78,13 +81,13 @@ class InternationalTransferController extends Controller
             'receipient_name' => $receipient_name,
             'receipient_bank' => $receipient_bank,
             'amount' => $amount * 100,
-            'description' => 'International transfer of $' . strval($amount),
+            'description' => $description,
             'status' => 'pending'
         ]);
 
         Mail::to(auth()->user()->email)->send(new TransferInitiated(auth()->user()->fullname, $transfer->hash, $transfer->amount, $transfer->transfer_type, $transfer->account_number, $transfer->receipient_name, $transfer->receipient_bank, $transfer->description, $transfer->status));
 
-        Mail::to('info@kinetixfinance.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
+        Mail::to('info@kinetixcapital.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
 
         return redirect('/international-transfer')->with('message', 'Transfer initiated successfully. You will receive an email when your transfer has been confirmed.');
     }

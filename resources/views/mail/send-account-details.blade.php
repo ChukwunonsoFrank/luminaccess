@@ -210,7 +210,7 @@ body, table, td, p, a, li, blockquote {
 								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
 								<tr>
 									<td align="left">
-										<img src="https://kinetixfinance.com/assets/images/site_logo/site_logo_black_3.png" alt="Logo" class="KinetixFinance-Logo" width="120">
+										<img src="https://kinetixcapital.com/assets/images/site_logo/site_logo_black_3.png" alt="Logo" class="KinetixFinance-Logo" width="120">
 									</td>
 								</tr>
 								</table>
@@ -258,7 +258,7 @@ body, table, td, p, a, li, blockquote {
 		</tr>
 		<tr>
 			<td align="left" style="color:#5a5a5a;padding:20px 40px 0 40px;font-family: 'Lato', Arial, Helvetica, sans-serif;font-weight:normal;font-size:14px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-            Welcome to Kinetix Finance. You can find your account details below which will be used for transacting as a customer.
+            Welcome to Kinetix Capital. You can find your account details below which will be used for transacting as a customer.
 			</td>
 		</tr>
 		</tbody>
@@ -350,7 +350,7 @@ body, table, td, p, a, li, blockquote {
 		<tbody>
 		<tr>
         <td align="center" style="color:#ffffff;padding:20px 40px 0 40px;font-family: 'Lato', Arial, Helvetica, sans-serif;font-weight:normal;font-size:12px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-                © 2025 Kinetix Finance. All rights reserved.
+                © 2025 Kinetix Capital. All rights reserved.
 			</td>
 		</tr>
 		</tbody>

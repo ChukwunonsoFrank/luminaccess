@@ -36,6 +36,7 @@ class LocalTransferController extends Controller
         $account_number = $request->account_number;
         $receipient_name = $request->receipient_name;
         $receipient_bank = $request->receipient_bank;
+        $description = $request->description;
 
         $generated_otp_token = strval(rand(100000, 999999));
 
@@ -50,6 +51,7 @@ class LocalTransferController extends Controller
             'account_number' => $account_number,
             'receipient_name' => $receipient_name,
             'receipient_bank' => $receipient_bank,
+            'description' => $description,
         ]);
     }
 
@@ -59,6 +61,7 @@ class LocalTransferController extends Controller
         $account_number = $request->account_number;
         $receipient_name = $request->receipient_name;
         $receipient_bank = $request->receipient_bank;
+        $description = $request->description;
         $otp_token = $request->otp_token;
 
         $user_otp_token = User::where('id', auth()->user()->id)->value('otp_token');
@@ -76,13 +79,13 @@ class LocalTransferController extends Controller
             'receipient_name' => $receipient_name,
             'receipient_bank' => $receipient_bank,
             'amount' => $amount * 100,
-            'description' => 'Local transfer of $' . strval($amount),
+            'description' => $description,
             'status' => 'pending'
         ]);
 
         Mail::to(auth()->user()->email)->send(new TransferInitiated(auth()->user()->fullname, $transfer->hash, $transfer->amount, $transfer->transfer_type, $transfer->account_number, $transfer->receipient_name, $transfer->receipient_bank, $transfer->description, $transfer->status));
 
-        Mail::to('info@kinetixfinance.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
+        Mail::to('info@kinetixcapital.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Local Transfer', $transfer->hash));
 
         return redirect('/local-transfer')->with('message', 'Transfer initiated successfully. You will receive an email when your transfer has been confirmed.');
     }
