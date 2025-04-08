@@ -14,6 +14,9 @@
                     <label for="">Email:</label> <br>
                     <input type="email" name="email" class="form-control" value="{{ $user->email }}"> <br>
 
+                    <label for="">Account Number:</label> <br>
+                    <input type="text" value="{{ $user->account_number}}" class="form-control" readonly> <br>
+
                     <label for="">Country:</label> <br>
                     <input type="text" name="country" class="form-control" value="{{ $user->country }}"> <br>
 
