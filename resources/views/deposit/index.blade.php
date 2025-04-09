@@ -82,9 +82,16 @@
                                     <td>{{ $deposit->hash }}</td>
                                     <td>${{ $deposit->amount / 100 }}</td>
                                     <td>
-                                       <div class="badge badge-pill badge-warning">
+                                       @if($deposit->confirmation_status === 'pending')
+                                       <div class="badge badge-pill badge-danger">
                                         {{ $deposit->confirmation_status }}
                                        </div>
+                                        @endif
+                                        @if($deposit->confirmation_status === 'confirmed')
+                                        <div class="badge badge-pill badge-success">
+                                          {{ $deposit->confirmation_status }}
+                                         </div>
+                                        @endif
                                     </td>
                                     <td>{{ $deposit->description }}</td>
                                  </tr>

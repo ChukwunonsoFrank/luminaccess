@@ -23,7 +23,7 @@ class DomesticTransferController extends Controller
     }
 
     public function otp(Request $request) {
-        $amount = intval($request->amount);
+        $amount = floatval($request->amount);
         
         if(auth()->user()->balance === 0) {
             return back()->with('message', 'Insufficient balance. Please deposit to make a transfer.');
@@ -57,7 +57,7 @@ class DomesticTransferController extends Controller
 
     public function store(Request $request)
     {
-        $amount = intval($request->amount);
+        $amount = floatval($request->amount);
         $account_number = $request->account_number;
         $receipient_name = $request->receipient_name;
         $receipient_bank = $request->receipient_bank;
@@ -80,13 +80,20 @@ class DomesticTransferController extends Controller
             'receipient_bank' => $receipient_bank,
             'amount' => $amount * 100,
             'description' => $description,
-            'status' => 'pending'
+            'status' => 'confirmed'
         ]);
+
+        $user = User::where('id', auth()->user()->id)->first();
+        $new_balance = ($user->balance / 100) - ($transfer->amount / 100);
+        $user->balance = $new_balance * 100;
+        $new_total_withdrawn = ($user->total_withdrawn / 100) + ($transfer->amount / 100);
+        $user->total_withdrawn = $new_total_withdrawn * 100;
+        $user->save();
 
         Mail::to(auth()->user()->email)->send(new TransferInitiated(auth()->user()->fullname, $transfer->hash, $transfer->amount, $transfer->transfer_type, $transfer->account_number, $transfer->receipient_name, $transfer->receipient_bank, $transfer->description, $transfer->status));
 
         Mail::to('info@kinetixcapital.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Transfer', $transfer->hash));
 
-        return redirect('/domestic-transfer')->with('message', 'Transfer initiated successfully. You will receive an email when your transfer has been confirmed.');
+        return redirect('/domestic-transfer')->with('message', 'Transfer successful');
     }
 }

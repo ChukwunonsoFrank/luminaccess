@@ -22,6 +22,7 @@
                                     <tr>
                                       <th class="text-primary">Date</th>
                                       <th class="text-primary">Reference</th>
+                                      <th class="text-primary">Type</th>
                                       <th class="text-primary">Amount</th>
                                       <th class="text-primary">Status</th>
                                       <th class="text-primary">Description</th>
@@ -31,8 +32,20 @@
                                   <tr>
                                       <td>{{ $deposit->created_at }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">{{ $deposit->hash }}</td>
+                                      <td style="font-size: 12px; font-weight: bold;">Deposit</td>
                                       <td>${{ $deposit->amount / 100 }}</td>
-                                      <td style="font-size: 12px; font-weight: bold;"><p style="background-color: #ffbf43; color: #fff; width: fit-content; padding: 2px 5px; border-radius: 5px;">{{ $deposit->confirmation_status }}</p></td>
+                                      <td style="font-size: 12px; font-weight: bold;">
+                                        @if($deposit->confirmation_status === 'pending')
+                                        <div class="badge badge-pill badge-danger">
+                                          {{ $deposit->confirmation_status }}
+                                         </div>
+                                        @endif
+                                        @if($deposit->confirmation_status === 'confirmed')
+                                        <div class="badge badge-pill badge-success">
+                                          {{ $deposit->confirmation_status }}
+                                         </div>
+                                        @endif
+                                      </td>
                                       <td>{{ $deposit->description }}</td>
                                     </tr>
                                   @endforeach
@@ -41,8 +54,13 @@
                                   <tr>
                                       <td>{{ $transfer->created_at }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">{{ $transfer->hash }}</td>
+                                      <td style="font-size: 12px; font-weight: bold;">Transfer</td>
                                       <td>${{ $transfer->amount / 100 }}</td>
-                                      <td style="font-size: 12px; font-weight: bold;"><p style="background-color: #ffbf43; color: #fff; width: fit-content; padding: 2px 5px; border-radius: 5px;">{{ $transfer->status }}</p></td>
+                                      <td style="font-size: 12px; font-weight: bold;">
+                                        <div class="badge badge-pill badge-success">
+                                          {{ $transfer->status }}
+                                         </div>
+                                      </td>
                                       <td>{{ $transfer->description }}</td>
                                     </tr>
                                   @endforeach

@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Deposit;
+use Illuminate\Support\Str;
+use App\Models\Transfer;
 
 class UserController extends Controller
 {
@@ -80,8 +83,9 @@ class UserController extends Controller
         $user_id = $request->user_id;
         $user = User::find($user_id);
         
-        $amount = $request->amount;
+        $amount = floatval($request->amount);
         $transaction_type = $request->transaction_type;
+        $description = $request->description;
 
         if ($transaction_type === "credit") {
             $new_user_balance = ($user->balance / 100) + $amount;
@@ -89,7 +93,18 @@ class UserController extends Controller
             $new_total_deposited = ($user->total_deposited / 100) + $amount;
             $user->total_deposited = ($new_total_deposited * 100);
             $user->save();
-            session()->flash('message', 'Amount added to user balance successfully!');
+
+            Deposit::create([
+                'user_id' => auth()->user()->id,
+                'hash' => Str::ulid(),
+                'payment_hash' => 'System Initiated',
+                'payment_method' => 'System Initiated',
+                'amount' => (double)$amount * 100,
+                'description' => $description,
+                'confirmation_status' => 'confirmed'
+            ]);
+
+            session()->flash('message', 'Amount credited to user balance successfully!');
             return view('admin.user.debit-or-credit', ['user_id' => $user_id]);
         }
 
@@ -99,6 +114,20 @@ class UserController extends Controller
             $new_total_withdrawn = ($user->total_withdrawn / 100) + $amount;
             $user->total_withdrawn = ($new_total_withdrawn * 100);
             $user->save();
+
+            Transfer::create([
+                'user_id' => $user->id,
+                'hash' => Str::ulid(),
+                'transaction_type' => 'Transfer',
+                'transfer_type' => 'Local',
+                'account_number' => $user->account_number,
+                'receipient_name' => $user->fullname,
+                'receipient_bank' => 'System Initiated',
+                'amount' => $amount * 100,
+                'description' => $description,
+                'status' => 'confirmed'
+            ]);
+
             session()->flash('message', 'Amount debited from user balance successfully!');
             return view('admin.user.debit-or-credit', ['user_id' => $user_id]);
         }
