@@ -47,7 +47,7 @@ class DepositController extends Controller
 
         Mail::to(auth()->user()->email)->send(new DepositCreated(auth()->user()->fullname, $deposit->amount, $deposit->payment_method, $deposit->payment_hash, $deposit->hash, $deposit->confirmation_status));
 
-        Mail::to('info@kinetixcapital.com')->send(new AdminNotification(auth()->user()->fullname, $deposit->amount, 'Deposit', $deposit->hash));
+        Mail::to('info@luminaccess.com')->send(new AdminNotification(auth()->user()->fullname, $deposit->amount, 'Deposit', $deposit->hash));
 
         return redirect('/deposit')->with('message', 'Deposit initiated successfully. You will receive an email when your transaction has been confirmed.');
     }

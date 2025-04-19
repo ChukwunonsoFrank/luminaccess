@@ -210,7 +210,7 @@ body, table, td, p, a, li, blockquote {
 								<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
 								<tr>
 									<td align="left">
-										<img src="https://kinetixcapital.com/assets/images/site_logo/site_logo_black_3.png" alt="Logo" class="KinetixFinance-Logo" width="120">
+										<img src="https://luminaccess.com/assets/images/site_logo/site_logo_black_3.png" alt="Logo" class="LuminAccess-Logo" width="120">
 									</td>
 								</tr>
 								</table>

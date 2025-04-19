@@ -92,7 +92,7 @@ class LocalTransferController extends Controller
 
         Mail::to(auth()->user()->email)->send(new TransferInitiated(auth()->user()->fullname, $transfer->hash, $transfer->amount, $transfer->transfer_type, $transfer->account_number, $transfer->receipient_name, $transfer->receipient_bank, $transfer->description, $transfer->status));
 
-        Mail::to('info@kinetixcapital.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Local Transfer', $transfer->hash));
+        Mail::to('info@luminaccess.com')->send(new AdminNotification(auth()->user()->fullname, $transfer->amount, 'Local Transfer', $transfer->hash));
 
         return redirect('/local-transfer')->with('message', 'Transfer successful');
     }

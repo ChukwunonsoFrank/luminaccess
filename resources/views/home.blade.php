@@ -35,11 +35,11 @@
                 </a>
             </li>
             <li>
-                <a href="mailto:info@kinetixcapital.com">
+                <a href="mailto:info@luminaccess.com">
                     <span class="iconlist_icon">
                         <img src="assets/images/icons/icon_mail.svg" alt="Icon Email">
                     </span>
-                    <span class="iconlist_text">info@kinetixcapital.com</span>
+                    <span class="iconlist_text">info@luminaccess.com</span>
                 </a>
             </li>
         </ul>
