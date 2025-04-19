@@ -10,7 +10,7 @@
                 @endif
                 <div class="site_logo mb-5 text-center">
                     <a class="site_link" href="{{ route('home') }}">
-                        <img src="assets/images/site_logo/site_logo_black_3.svg" width="200" alt="Site Logo Black">
+                        <img src="assets/images/site_logo/site_logo_black_3.png" width="200" alt="Site Logo Black">
                     </a>
                 </div>
                 <h3 class="title_text text-black">Login to Account

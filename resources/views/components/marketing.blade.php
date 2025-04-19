@@ -6,16 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="thumbnail" content="assets/images/Kinetix Capital_page_thumbnail.webp">
-    <meta name="description" content="Kinetix Capital – Finance & Consulting Site Template.">
-    <meta name="keywords" content="Finance & Consulting Bootstrap Site Template">
-    <meta name="author" content="XpressBuddy">
 
-    <title>Kinetix Capital – Get Access To Top of the Line Banking Services.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Lumin Access – Expert Financial & Banking Services.</title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-    <link rel="shortcut icon" href="{{ asset('assets/images/site_logo/favourite_icon_2.svg') }}">
 
     <!-- Fraimwork - CSS Include -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -63,7 +62,7 @@
                         <div class="col-md-6 col-sm-4 col-6 d-flex align-items-center">
                             <div class="site_logo">
                                 <a class="site_link" href="{{ route('home') }}">
-                                    <img src="assets/images/site_logo/site_logo_black_3.svg" alt="Site Logo Black">
+                                    <img src="assets/images/site_logo/site_logo_black_3.png" alt="Site Logo Black">
                                 </a>
                             </div>
                         </div>
@@ -207,7 +206,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <p class="copyright_text mb-0">
-                                Copyright © 2025 Kinetix Capital. All rights reserved.
+                                Copyright © 2025 Lumin Access. All rights reserved.
                             </p>
                         </div>
                         <div class="col-lg-6">
@@ -222,8 +221,8 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li><a aria-label="Facebook" href="#!"><i
-                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a aria-label="Facebook" href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
                                 <li><a aria-label="Linkedin" href="#!"><i
                                             class="fa-brands fa-linkedin-in"></i></a></li>
                                 <li><a aria-label="Paper Plane" href="#!"><i

@@ -61,6 +61,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/transactions', [TransactionsController::class, 'index']);
+    Route::get('transactions/receipt', [TransactionsController::class, 'generateReceipt']);
+    Route::get('/transactions/{hash}', [TransactionsController::class, 'show']);
 
     Route::get('/international-transfer', [InternationalTransferController::class, 'create']);
     Route::post('/international-transfer', [InternationalTransferController::class, 'store']);

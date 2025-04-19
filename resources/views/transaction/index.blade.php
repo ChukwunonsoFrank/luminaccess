@@ -29,7 +29,7 @@
                                     </tr>
                                   </thead>
                                   @foreach($deposits as $deposit)
-                                  <tr>
+                                  <tr onclick="window.location.href='/transactions/{{ $deposit->hash }}'" style="cursor:pointer;">
                                       <td>{{ $deposit->created_at }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">{{ $deposit->hash }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">Deposit</td>
@@ -51,7 +51,7 @@
                                   @endforeach
   
                                   @foreach($transfers as $transfer)
-                                  <tr>
+                                  <tr onclick="window.location.href='/transactions/{{ $transfer->hash }}'" style="cursor:pointer;">
                                       <td>{{ $transfer->created_at }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">{{ $transfer->hash }}</td>
                                       <td style="font-size: 12px; font-weight: bold;">Transfer</td>

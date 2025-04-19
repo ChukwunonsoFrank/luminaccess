@@ -338,7 +338,7 @@ body, table, td, p, a, li, blockquote {
 		<tbody>
 		<tr>
         <td align="center" style="color:#ffffff;padding:20px 40px 0 40px;font-family: 'Lato', Arial, Helvetica, sans-serif;font-weight:normal;font-size:12px;-webkit-font-smoothing:antialiased;line-height:1.4;" class="table-container">
-                © 2025 Kinetix Capital. All rights reserved.
+                © 2025 Lumin Access. All rights reserved.
 			</td>
 		</tr>
 		</tbody>

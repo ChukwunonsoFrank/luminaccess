@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Kinetix Capital - The Best Way To Bank Internationally</title>
+        <title>Lumin Access - The Best Way To Bank Internationally</title>
 
         <script src="{{ asset('dash/js/jquery.min.js') }}"></script>
       <script src="{{ asset('dash/js/popper.min.js') }}"></script>
@@ -27,7 +27,7 @@
             <div class="iq-sidebar">
               <div class="iq-navbar-logo d-flex justify-content-between">
                  <a href="{{ route('dashboard') }}" class="header-logo">
-                 <img src="{{ asset('assets/images/site_logo/site_logo_black_3.svg') }}" width="120" class="img-fluid" alt="">
+                 <img src="{{ asset('assets/images/site_logo/site_logo_black_3.png') }}" width="120" class="img-fluid" alt="">
                  </a>
                  <div class="iq-menu-bt align-self-center">
                     <div class="wrapper-menu">
@@ -89,7 +89,7 @@
                        </div>
                        <div class="iq-navbar-logo d-flex justify-content-between ml-3">
                           <a href="{{ route('dashboard') }}" class="header-logo">
-                          <img src="{{ asset('assets/images/site_logo/site_logo_black_3.svg') }}" width="120" class="img-fluid" alt="">
+                          <img src="{{ asset('assets/images/site_logo/site_logo_black_3.png') }}" width="120" class="img-fluid" alt="">
                           </a>
                        </div>
                     </div>

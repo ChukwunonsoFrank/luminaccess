@@ -685,7 +685,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Kinetix Capital exceeded my expectations. Their tailored plan
+                                    "Lumin Access exceeded my expectations. Their tailored plan
                                     aligned perfectly with my goals. Highly recommended!"
                                 </p>
                                 <div class="authorbox_block">
@@ -706,7 +706,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Exceptional service from Kinetix Capital. Their team's expert advice and personalized
+                                    "Exceptional service from Lumin Access. Their team's expert advice and personalized
                                     helped me achieve my financial goals quickly."
                                 </p>
                                 <div class="authorbox_block">
@@ -727,7 +727,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Selecting Kinetix Capital was among my best decisions. Their clear advice, their
+                                    "Selecting Lumin Access was among my best decisions. Their clear advice, their
                                     support empowered me to make informed financial decisions."
                                 </p>
                                 <div class="authorbox_block">
@@ -748,7 +748,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Kinetix Capital exceeded my expectations. Their tailored plan
+                                    "Lumin Access exceeded my expectations. Their tailored plan
                                     aligned perfectly with my goals. Highly recommended!"
                                 </p>
                                 <div class="authorbox_block">
@@ -769,7 +769,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Exceptional service from Kinetix Capital. Their team's expert advice and personalized
+                                    "Exceptional service from Lumin Access. Their team's expert advice and personalized
                                     helped me achieve my financial goals quickly."
                                 </p>
                                 <div class="authorbox_block">
@@ -790,7 +790,7 @@
                                     <img src="assets/images/icons/icon_quote.svg" alt="Quote Icon">
                                 </div>
                                 <p class="review_comment">
-                                    "Selecting Kinetix Capital was among my best decisions. Their clear advice, their
+                                    "Selecting Lumin Access was among my best decisions. Their clear advice, their
                                     support empowered me to make informed financial plans."
                                 </p>
                                 <div class="authorbox_block">
