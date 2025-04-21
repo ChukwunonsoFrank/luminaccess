@@ -34,8 +34,7 @@
                     <label for="">Status:</label> <br>
                     <select name="status" class="form-control">
                         <option value="pending" {{ $transfer->status === 'pending' ? 'selected' : '' }}>Pending</option>
-                        <option value="success" {{ $transfer->status === 'success' ? 'selected' : '' }}>Success</option>
-                        <option value="failed" {{ $transfer->status === 'failed' ? 'selected' : '' }}>Failed</option>
+                        <option value="confirmed" {{ $transfer->status === 'confirmed' ? 'selected' : '' }}>Success</option>
                     </select> <br>
 
                     <label for="">Date:</label> <br>
