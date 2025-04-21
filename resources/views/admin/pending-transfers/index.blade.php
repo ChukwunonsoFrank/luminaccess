@@ -5,55 +5,12 @@
           <x-admin-navbar></x-admin-navbar>
       
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
-      
-            <section class="row text-center placeholders">
-              <div class="col-6 col-sm-3">
-                <div class="panel panel-info">
-                  <div class="panel-heading">Header</div>
-                  <div class="panel-body">
-                    <h4>123</h4>
-                    <p>Data</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="panel panel-success">
-                  <div class="panel-heading">Header</div>
-                  <div class="panel-body">
-                    <h4>123</h4>
-                    <p>Data</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="panel panel-warning">
-                  <div class="panel-heading">Header</div>
-                  <div class="panel-body">
-                    <h4>123</h4>
-                    <p>Data</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-3">
-                <div class="panel panel-danger">
-                  <div class="panel-heading">Header</div>
-                  <div class="panel-body">
-                    <h4>123</h4>
-                    <p>Data</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-      
-      
-      
             <h1 class="sub-header">
               <div class="btn-group pull-right" role="group" aria-label="Basic example">
               <button type="button" class="btn btn-primary">Print</button>
               <button type="button" class="btn btn-primary">Export</button>
             </div>
-              Table
+              Pending Transfers
             </h1>
             <div class="table-responsive">
               <table class="table table-hover table-bordered">
