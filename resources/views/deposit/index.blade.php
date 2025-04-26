@@ -46,9 +46,8 @@
                               >
                                 <option value="bitcoin">Bitcoin</option>
                                 <option value="ethereum">Ethereum</option>
-                                <option value="usdt">USDT</option>
+                                <option value="usdt">USDT(BEP 20)</option>
                                 <option value="binance">Binance Coin(BNB)</option>
-                                <!-- <option value="litecoin">Litecoin</option> -->
                               </select>
                             </div>
                             <button type="submit" class="btn btn-primary mt-4">Deposit</button>
