@@ -53,9 +53,15 @@
         </div>
         <!-- Back To Top - End -->
 
+        
+
         <!-- Site Header - Start
-      ================================================== -->
-        <header class="site_header header_layout_2">
+            ================================================== -->
+            <header class="site_header header_layout_2">
+            <div class="container-fluid pt-3 d-lg-none text-center" style="height: 80px; background-color: #000; width: 100%;">
+                <div class="text-white mb-2" style="font-size: 12px;"><i class="fas fa-phone"></i> <span> <a class="text-white" href="tel:+14438192907">+1 443-819-2907</a></span></div>
+                <div class="text-white" style="font-size: 12px;"><i class="fas fa-map-marker-alt"></i> <span> 600 W MacPhail Rd, Bel Air, MD 21014, United States</span></div>
+            </div>
             <div class="header_top">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -73,12 +79,11 @@
                                 </span>
                                 <span class="btn_label">Login</span>
                             </a>
-                            <a class="hotline_btn" href="tel:8005550199">
+                            <a class="hotline_btn" href="tel:+14438192907">
                                 <span class="btn_icon">
                                     <img src="assets/images/icons/icon_calling_4.svg" alt="Icon Calling">
                                 </span>
-                                <span class="btn_label" data-text="Hotline: (800) 555‑0199">Hotline: (800)
-                                    555‑0199</span>
+                                <span class="btn_label" data-text="Hotline: +1 443-819-2907">Hotline: +1 443-819-2907</span>
                             </a>
                         </div>
                     </div>
@@ -201,11 +206,20 @@
       ================================================== -->
         <footer class="site_footer footer_layout_4 section_decoration">
 
-            <div class="footer_bottom bg-dark">
+            <div class="footer_bottom bg-dark pt-5">
                 <div class="container">
+                    <div class="site_logo">
+                        <a class="site_link" href="{{ route('home') }}">
+                            <img src="assets/images/site_logo/site_logo_black_3.png" width="200" alt="Site Logo Black">
+                        </a>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <p class="copyright_text"><b>Phone</b>: +1 443-819-2907</p>
+                        <p class="copyright_text"><b>Address</b>: 600 W MacPhail Rd, Bel Air, MD 21014, United States</p>
+                    </div>
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-                            <p class="copyright_text mb-0">
+                            <p class="copyright_text mb-0" style="font-size: 13px;">
                                 Copyright © 2025 Lumin Access. All rights reserved.
                             </p>
                         </div>

@@ -31,7 +31,7 @@
                     <span class="iconlist_icon">
                         <img src="assets/images/icons/icon_calling_4.svg" alt="Icon Calling">
                     </span>
-                    <span class="iconlist_text">+(1) 1230 452 8759</span>
+                    <span class="iconlist_text">+1 443-819-2907</span>
                 </a>
             </li>
             <li>
